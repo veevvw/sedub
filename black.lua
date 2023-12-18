@@ -917,7 +917,7 @@ data = {
 },
 }
 }
-send(msg.chat_id,msg.id,"➢ مرحبا عزيزي في مصنع الحمايه المجاني لسورس بلاك \n➢ مبرمج السورس @BxxBxxL","html",true, false, false, true, reply_markup)
+send(msg.chat_id,msg.id,"➢ مرحبا عزيزي في مصنع الحمايه المجاني لسورس سيدثون \n➢ مبرمج السورس @NUNUU","html",true, false, false, true, reply_markup)
 return false 
 end
 ---making user
@@ -989,8 +989,8 @@ end
 end
 
 ----
-if text == 'المطور جاك' or text == 'مبرمج السورس' or text == 'جاك' then  
-local UserId_Info = LuaTele.searchPublicChat("BxxBxxL")
+if text == 'المطور بلال' or text == 'مبرمج السورس' or text == 'بلال' then  
+local UserId_Info = LuaTele.searchPublicChat("NUNUU")
 if UserId_Info.id then
 local UserInfo = LuaTele.getUser(UserId_Info.id)
 local InfoUser = LuaTele.getUserFullInfo(UserId_Info.id)
@@ -1001,11 +1001,11 @@ Bio = ''
 end
 local photo = LuaTele.getUserProfilePhotos(UserId_Info.id)
 if photo.total_count > 0 then
-local TestText = "˛ َِ𝗔َِ𝗹َِ𝘀َِ𝗵 .¹#\n— — — — — — — — —\n ❍*َdev name➢* :  ["..UserInfo.first_name.."](tg://user?id="..UserId_Info.id..")\n❍*َbio* : [❲ "..Bio.." ❳]"
+local TestText = "اެݪ تِــاެࢪيٰــخَ ¦ BiLaL#\n— — — — — — — — —\n ❍*َdev name➢* :  ["..UserInfo.first_name.."](tg://user?id="..UserId_Info.id..")\n❍*َbio* : [❲ "..Bio.." ❳]"
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
-{text = '˛ َِ𝗔َِ𝗹َِ𝘀َِ𝗵 .¹#', url = "https://t.me/BxxBxxL"}
+{text = 'اެݪ تِــاެࢪيٰــخَ ¦ BiLaL#', url = "https://t.me/NUNUU"}
 },
 }
 local msg_id = msg.id/2097152/0.5 
@@ -1015,10 +1015,10 @@ local TestText = "- معلومات مبرمج السورس : \\nn: name Dev . ["
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
-{text = '˛ َِ𝗔َِ𝗹َِ𝘀َِ𝗵 .¹#', url = "https://t.me/BxxBxxL"}
+{text = '˛ َِ𝗔َِ𝗹َِ𝘀َِ𝗵 .¹#', url = "https://t.me/NUNUU"}
 },
 {
-{text = '𝗦𝗢𝗨𝗥𝗖𝗘 𝗥𝗨𝗡𝗧𝗛𝗢𝗡', url = "https://t.me/xLxLxLrr3"},
+{text = '᥉᥆ᥙᖇᥴᥱ ᥉ᥱძƚɦ᥆ꪀ 🐉', url = "https://t.me/VEEVVW"},
 },
 }
 local msg_id = msg.id/2097152/0.5 
@@ -1031,19 +1031,19 @@ if text == 'السورس' or text == 'سورس' or text == 'يا سورس' or te
 photo = "https://t.me/source_Runthon/2"
 local T =[[
 ــــــــــــــــــــــ❍ـــــــــــــــــــــ
- ❍ 𝗦𝗢𝗨𝗥𝗖𝗘 𝗥𝗨𝗡𝗧𝗛𝗢𝗡 ❍
+ ❍ ᥉᥆ᥙᖇᥴᥱ ᥉ᥱძƚɦ᥆ꪀ 🐉 ❍
 ــــــــــــــــــــــ❍ـــــــــــــــــــــ
-❍ 𝐷𝐸𝑉 >> [˹ ˛ َِ𝗔َِ𝗹َِ𝘀َِ𝗵 .¹ .](t.me/BxxBxxL)
+❍ 𝐷𝐸𝑉 >> [˹ اެݪ تِــاެࢪيٰــخَ ¦ BiLaL .](t.me/NUNUU)
 ــــــــــــــــــــــ❍ـــــــــــــــــــــ 
-❍ 𝐷𝐸𝑉 >> [˹ ᴛᴏ ᴄᴏᴍᴍᴜɴɪᴄᴀᴛᴇ.² .](t.me/SAN_M_bot)
+❍ 𝐷𝐸𝑉 >> [˹ ᴛᴏ ᴄᴏᴍᴍᴜɴɪᴄᴀᴛᴇ.² .](t.me/fzb0bot)
 ــــــــــــــــــــــ❍ـــــــــــــــــــــ 
-❍ـــ❍ >> [˹ 𝗦𝗢𝗨𝗥𝗖𝗘 𝗥𝗨𝗡𝗧𝗛𝗢𝗡 .](t.me/xLxLxLrr3)
+❍ـــ❍ >> [˹ ᥉᥆ᥙᖇᥴᥱ ᥉ᥱძƚɦ᥆ꪀ 🐉 .](t.me/xLxLxLrr3)
 ــــــــــــــــــــــ❍ـــــــــــــــــــــ
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = 'ِّّ𝗦𝗢𝗨𝗥𝗖𝗘 𝗥𝗨𝗡𝗧𝗛𝗢𝗡', url = 't.me/xLxLxLrr3'}, 
+{text = 'ِّّ᥉᥆ᥙᖇᥴᥱ ᥉ᥱძƚɦ᥆ꪀ 🐉', url = 't.me/VEEVVW'}, 
 },
 }
 local msgg = msg.id/2097152/0.5
