@@ -4678,6 +4678,30 @@ return send(msg_chat_id,msg_id,Reply_Status(UserId[2],"❍ تم ترقيته م�
 end
 end
 end
+if text == "اقتباس" or text == "اقتباسات" or text == "قتباس" then 
+if not redis:get(bot_id.."trfeh"..msg.chat_id) then
+return bot.sendText(msg.chat_id,msg.id,"- التسليه معطله بواسطه المشرفين .","md",true)
+end
+Abs = math.random(3,101);
+local Text ='- تم اختيار الاقتباس لك وحدك.'
+local MsgId = msg.id/2097152/0.5
+local MSGID = string.gsub(MsgId,'.0','')
+keyboard = {}  
+keyboard.inline_keyboard = {
+{{text = '- ᥉᥆ᥙᖇᥴᥱ ᥉ᥱძƚɦ᥆ꪀ 🐉.',url="t.me/VEEVVW"}},
+}
+local msg_id = msg.id/2097152/0.5 
+https.request("https://api.telegram.org/bot"..Token..'/sendphoto?chat_id=' .. msg.chat_id .. '&photo=https://t.me/SSSSDIBOTZ/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end
+if text == 'تفعيل الاقتباسات' or text == 'تفعيل اقتباسات' or text == 'تفعيل وضع الاقتباسات' or text == 'تفعيل وضع اقتباسات' then
+if not Administrator(msg) then
+return bot.sendText(msg.chat_id,msg.id,'\n*- عذراً الامر يخص الادمن فقط .* ',"md",true)  
+end
+redis:del(bot_id..'Status:Reply'..msg.chat_id)
+redis:set(bot_id.."Status:aktbas"..msg.chat_id,true) 
+bot.sendText(msg.chat_id,msg.id,Reply_Status(msg.sender_id.user_id,"*- تم تفعيل الاقتباسات *").by,"md",true)
+end
+  
 ---تسليه بالايدي
 if text and text:match("^تغيير رد المطور (.*)$") then
 local Teext = text:match("^تغيير رد المطور (.*)$") 
